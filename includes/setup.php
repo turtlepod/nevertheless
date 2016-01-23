@@ -21,8 +21,9 @@ add_theme_support( 'tamatebako-sidebars', $sidebars_args );
 /* === Register Menus === */
 
 $nav_menus_args = array(
-	"primary" => _x( 'Navigation', 'nav menu name', 'nokonoko' ),
-	"footer" => _x( 'Footer Links', 'nav menu name', 'nokonoko' ),
+	"primary"      => _x( 'Navigation', 'nav menu name', 'nokonoko' ),
+	"social-links" => _x( 'Social Links', 'nav menu name', 'nokonoko' ),
+	"footer"       => _x( 'Footer Links', 'nav menu name', 'nokonoko' ),
 );
 register_nav_menus( $nav_menus_args );
 

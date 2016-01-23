@@ -55,9 +55,6 @@ function nokonoko_theme_setup(){
 	/* === UTILITY: Mobile View, Custom CSS === */
 	tamatebako_include( 'includes/utility' );
 
-	/* === POST FORMATS === */
-	tamatebako_include( 'includes/post-formats' );
-
 }
 
 do_action( 'tamatebako_after_setup' );
