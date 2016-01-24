@@ -6,20 +6,26 @@
 
 /* Customizer setting configuration */
 $fonts_config = array(
-	'site_title_font' => array(
+	'font_site_title' => array(
 		'label' => _x( 'Site Title Font', 'customizer', 'nevertheless' ),
 		'description' => _x( 'You can select your preferred font for your site title below.', 'customizer', 'nevertheless' ),
 		'target' => '#site-title',
 		'fonts' => array( 'websafe', 'heading', 'base' ),
 		'default' => 'Open Sans',
 	),
-	'post_title_font' => array(
+	'font_post_title' => array(
 		'label' => _x( 'Post Title Font', 'customizer', 'nevertheless' ),
 		'target' => '#content .entry-title',
 		'fonts' => array( 'websafe', 'heading', 'base' ),
 		'default' => 'Open Sans',
 	),
-	'base_font' => array(
+	'font_widget_title' => array(
+		'label' => _x( 'Widget Title', 'customizer', 'nokonoko' ),
+		'target' => '.widget-title',
+		'fonts' => array( 'websafe', 'heading', 'base' ),
+		'default' => 'Open Sans',
+	),
+	'font_base' => array(
 		'label' => _x( 'Base Font', 'customizer', 'nevertheless' ),
 		'target' => 'body.wordpress,body#tinymce',
 		'fonts' => array( 'websafe', 'base' ),
@@ -30,7 +36,7 @@ $fonts_config = array(
 /* Additional settings for custom font features */
 $fonts_settings = array(
 	'editor_styles' => array(
-		'base_font',
+		'font_base',
 	),
 	/**
 	 * Translators: to add an additional font character subset specific to your language

@@ -1140,8 +1140,8 @@ button:focus,
 		font-size: 17px;
 		font-size: 1.7rem;
 		line-height: 1em;
-		padding: 10px;
-		padding: 1rem;
+		padding: 10px 20px;
+		padding: 1rem 2rem;
 		margin-top: -21px;
 		margin-top: -2.1rem;
 		margin-right: -21px;
