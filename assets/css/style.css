@@ -193,6 +193,7 @@ button:focus,
 	padding: 20px;
 	padding: 2rem;
 	border-bottom: none;
+	background-color: #EA7521;
 	background-repeat: no-repeat;
 	background-position: left top;
 }

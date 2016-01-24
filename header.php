@@ -1,4 +1,4 @@
-<header role="banner" id="header" style="background-image:url('<?php header_image(); ?>');">
+<header role="banner" id="header" style="background-image:url('<?php echo get_header_image(); ?>');">
 
 	<div id="branding">
 
