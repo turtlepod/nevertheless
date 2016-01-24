@@ -5,7 +5,7 @@
 
 /* === Custom Header Image === */
 $custom_header_args = array(
-	'default-image'          => '%s/assets/images/header.jpg',
+	'default-image'          => '%s/assets/images/header.png',
 	'random-default'         => false,
 	'width'                  => 940,
 	'height'                 => 240,
@@ -22,8 +22,8 @@ add_theme_support( 'custom-header', $custom_header_args );
 register_default_headers(
 	array(
 		'default' => array(
-			'url'           => '%s/assets/images/header.jpg',
-			'thumbnail_url' => '%s/assets/images/header.jpg',
+			'url'           => '%s/assets/images/header.png',
+			'thumbnail_url' => '%s/assets/images/header-thumbnail.jpg',
 			'description'   => __( 'Default', 'nevertheless' )
 		),
 	)

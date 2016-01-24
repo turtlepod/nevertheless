@@ -1498,15 +1498,15 @@ button:focus,
 		padding-left: 0;
 	}
 	#menu-primary li a{
-		background: #fff;
-		color: #444;
+		background: #fff !important;
+		color: #444 !important;
 		border-left: 1px solid #ccc;
 		border-right: 1px solid #ccc;
 		border-bottom: 1px solid #ccc;
 	}
 	#menu-primary li a:hover,
 	#menu-primary li a:focus{
-		background: #f1f1f1;
+		background: #f1f1f1 !important;
 	}
 	#menu-primary li li a{
 		background: #fff;

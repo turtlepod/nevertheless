@@ -19,6 +19,7 @@ function nevertheless_color_customizer( $wp_customize ){
 	$wp_customize->add_setting( 'color_link', array(
 		'default'             => '#ea7521',
 		'type'                => 'theme_mod',
+		'transport'           => 'postMessage',
 		'capability'          => 'edit_theme_options',
 		'sanitize_callback'   => 'tamatebako_sanitize_hex_color',
 	));
@@ -43,6 +44,7 @@ function nevertheless_color_customizer( $wp_customize ){
 	$wp_customize->add_setting( 'color_header_bg', array(
 		'default'             => '#ea7521',
 		'type'                => 'theme_mod',
+		'transport'           => 'postMessage',
 		'capability'          => 'edit_theme_options',
 		'sanitize_callback'   => 'tamatebako_sanitize_hex_color',
 	));
@@ -67,6 +69,7 @@ function nevertheless_color_customizer( $wp_customize ){
 	$wp_customize->add_setting( 'color_site_title', array(
 		'default'             => '#ffffff',
 		'type'                => 'theme_mod',
+		'transport'           => 'postMessage',
 		'capability'          => 'edit_theme_options',
 		'sanitize_callback'   => 'tamatebako_sanitize_hex_color',
 	));
@@ -91,6 +94,7 @@ function nevertheless_color_customizer( $wp_customize ){
 	$wp_customize->add_setting( 'color_site_description', array(
 		'default'             => '#444444',
 		'type'                => 'theme_mod',
+		'transport'           => 'postMessage',
 		'capability'          => 'edit_theme_options',
 		'sanitize_callback'   => 'tamatebako_sanitize_hex_color',
 	));
@@ -115,6 +119,7 @@ function nevertheless_color_customizer( $wp_customize ){
 	$wp_customize->add_setting( 'color_nav_bg', array(
 		'default'             => '#ea7521',
 		'type'                => 'theme_mod',
+		'transport'           => 'postMessage',
 		'capability'          => 'edit_theme_options',
 		'sanitize_callback'   => 'tamatebako_sanitize_hex_color',
 	));
@@ -139,6 +144,7 @@ function nevertheless_color_customizer( $wp_customize ){
 	$wp_customize->add_setting( 'color_nav', array(
 		'default'             => '#ffffff',
 		'type'                => 'theme_mod',
+		'transport'           => 'postMessage',
 		'capability'          => 'edit_theme_options',
 		'sanitize_callback'   => 'tamatebako_sanitize_hex_color',
 	));
@@ -159,6 +165,18 @@ function nevertheless_color_customizer( $wp_customize ){
 
 }
 
+/* Customizer Preview JS */
+add_action( 'customize_preview_init', 'nevertheless_customize_preview_js' );
+
+/**
+ * Preview JS
+ * @since 1.0.0
+ */
+function nevertheless_customize_preview_js(){
+
+	/* Color */
+	wp_enqueue_script( 'nevertheless-customizer-color', trailingslashit( get_template_directory_uri() ) . 'assets/js/customizer-color.js', array( 'jquery', 'customize-preview' ), tamatebako_theme_version(), true );
+}
 
 /* Print CSS to wp_head */
 add_action( 'wp_head', 'nevertheless_color_print_css' );
@@ -210,16 +228,31 @@ function nevertheless_color_print_css(){
 	/* Nav BG Color */
 	if ( 'ea7521' != $color_nav_bg ){
 		$css .= "#menu-primary .menu-container{ background-color: #{$color_nav_bg}; }";
-		$css .= "#menu-primary li a{ background-color: #{$color_nav_bg}; }";
+		$css .= "#menu-primary-items > li > a{ background-color: #{$color_nav_bg}; }";
 	}
 
 	/* Nav Text Color */
 	if ( 'ffffff' != $color_nav ){
 		$css .= "#menu-primary-items > li > a{ color: #{$color_nav}; }";
+		$css .= "#menu-primary .menu-toggle a{ color: #{$color_nav}; }";
+		$css .= "#menu-primary .menu-search .search-toggle{ color: #{$color_nav}; }";
+		$css .= "#menu-primary .search-toggle-active.menu-search button{ color: #{$color_nav}; }";
 	}
 
 	/* Print it. */
 	if ( !empty( $css ) ){
 		echo "\n" . '<style type="text/css" id="nevertheless-color-css">' . trim( $css ) . '</style>' . "\n";
 	}
+
+	/* Customizer Only (special placeholder for link color). */
+	global $wp_customize;
+	if ( isset( $wp_customize ) ){
+		echo "\n" . '<style type="text/css" id="nevertheless-link-color-css"></style>' . "\n";
+		echo "\n" . '<style type="text/css" id="nevertheless-header-bg-color-css"></style>' . "\n";
+		echo "\n" . '<style type="text/css" id="nevertheless-site-title-color-css"></style>' . "\n";
+		echo "\n" . '<style type="text/css" id="nevertheless-site-description-color-css"></style>' . "\n";
+		echo "\n" . '<style type="text/css" id="nevertheless-nav-bg-color-css"></style>' . "\n";
+		echo "\n" . '<style type="text/css" id="nevertheless-nav-color-css"></style>' . "\n";
+	}
 }
+
