@@ -1,5 +1,3 @@
-<?php tamatebako_entry_nav(); ?>
-
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 
 	<div class="wrap">
@@ -33,5 +31,7 @@
 	</div><!-- .entry > .wrap -->
 
 </article><!-- .entry -->
+
+<?php tamatebako_entry_nav(); ?>
 
 <?php comments_template( '', true ); // Load comments. ?>
