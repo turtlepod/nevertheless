@@ -11,7 +11,7 @@ $fonts_config = array(
 		'description' => _x( 'You can select your preferred font for your site title below.', 'customizer', 'nevertheless' ),
 		'target' => '#site-title',
 		'fonts' => array( 'websafe', 'heading', 'base' ),
-		'default' => 'Open Sans',
+		'default' => 'Rancho',
 	),
 	'font_post_title' => array(
 		'label' => _x( 'Post Title Font', 'customizer', 'nevertheless' ),

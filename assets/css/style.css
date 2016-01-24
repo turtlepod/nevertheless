@@ -487,7 +487,12 @@ button:focus,
 			text-decoration: none;
 		}
 		.sticky .entry-title:before{
-			
+			content: '\f308';
+			margin-right: 5px;
+			color: #bbb;
+			font-family: "genericons";
+			vertical-align: top;
+			-webkit-font-smoothing: antialiased;
 		}
 		/* Byline */
 		.entry-byline{
@@ -1442,6 +1447,10 @@ button:focus,
 	}
 	#comments-template{
 		padding: 0;
+	}
+	.navigation.pagination{
+		padding: 20px 0;
+		padding: 2rem 0;
 	}
 }
 
