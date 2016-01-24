@@ -13,9 +13,3 @@ $custom_backgound_args = array(
 );
 add_theme_support( 'custom-background', $custom_backgound_args );
 
-/* Full Size Background (Cover) */
-$full_size_bg_args = array(
-	'label'                  => _x( 'Full Size Background', 'customizer', 'nevertheless' ),
-);
-add_theme_support( 'tamatebako-full-size-background', $full_size_bg_args );
-

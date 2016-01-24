@@ -44,6 +44,9 @@ function nevertheless_theme_setup(){
 	/* === HEADER IMAGE === */
 	tamatebako_include( 'includes/header-image' );
 
+	/* === COLOR === */
+	tamatebako_include( 'includes/color' );
+
 	/* === LOGO === */
 	tamatebako_include( 'includes/logo' );
 

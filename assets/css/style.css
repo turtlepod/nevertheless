@@ -155,8 +155,8 @@ input[type="button"],
 input[type="reset"],
 button,
 .button{
-	border: 1px solid #ea7521;
-	background: #ea7521;
+	border: 1px solid #444;
+	background: #444;
 	color: #fff;
 }
 input[type="submit"]:hover,
@@ -169,8 +169,8 @@ button:hover,
 button:focus,
 .button:hover,
 .button:focus{
-	border: 1px solid #FF8024;
-	background: #FF8024;
+	border: 1px solid #ea7521;
+	background: #ea7521;
 }
 
 /* === IMAGES & MEDIA === */
@@ -649,21 +649,20 @@ button:focus,
 			.entry-taxonomy{
 				display: block;
 			}
+			.entry-taxonomy:before{
+				content: '';
+				color: #bbb;
+				font-family: "genericons";
+				vertical-align: top;
+				-webkit-font-smoothing: antialiased;
+			}
 			.entry-taxonomy.category{
 			}
 			.entry-taxonomy.category:before{
 				content: '\f301';
-				color: #bbb;
-				font-family: "genericons";
-				vertical-align: top;
-				-webkit-font-smoothing: antialiased;
 			}
 			.entry-taxonomy.post_tag:before{
 				content: '\f302';
-				color: #bbb;
-				font-family: "genericons";
-				vertical-align: top;
-				-webkit-font-smoothing: antialiased;
 			}
 				.entry-taxonomy.category .entry-taxonomy-text,
 				.entry-taxonomy.post_tag .entry-taxonomy-text{
