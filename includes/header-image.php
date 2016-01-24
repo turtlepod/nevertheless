@@ -5,15 +5,15 @@
 
 /* === Custom Header Image === */
 $custom_header_args = array(
-	'default-image'          => '',
+	'default-image'          => get_template_directory_uri() . '/assets/images/header.jpg',
 	'random-default'         => false,
-	'width'                  => 0,
-	'height'                 => 0,
+	'width'                  => 940,
+	'height'                 => 240,
 	'flex-height'            => false,
 	'flex-width'             => false,
-	'default-text-color'     => '',
-	'header-text'            => false, /* false, use as logo */
+	'default-text-color'     => '#ffffff',
+	'header-text'            => false, /* no option */
 	'uploads'                => true,
 	'wp-head-callback'       => '',
 );
-//add_theme_support( 'custom-header', $custom_header_args );
+add_theme_support( 'custom-header', $custom_header_args );

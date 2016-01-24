@@ -193,27 +193,36 @@ button:focus,
 	padding: 20px;
 	padding: 2rem;
 	border-bottom: none;
-	background: url( '../images/header.jpg' ) no-repeat;
-	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: left top;
 }
 #header:after{
 	content:".";display:block;height:0;clear:both;visibility:hidden;
 }
 	#branding{
 		float: left;
+		padding: 15px;
+		padding: 1.5rem;
+	}
+	.logo-uploaded #branding{
+		padding: 0;
 	}
 
 		#site-title{
-			font-size: 25px;
-			font-size: 2.5rem;
+			font-size: 35px;
+			font-size: 3.5rem;
 			font-weight: 800;
 			line-height: 1.2em;
 			margin: 0;
 		}
 			#site-title a{
+				color: #fff;
 			}
 			#site-title a:hover,
 			#site-title a:focus{
+				color: #fff;
+				opacity: 0.8;
+				text-decoration: none;
 			}
 		#site-description{
 			font-size: 17px;
@@ -1518,6 +1527,7 @@ button:focus,
 @media screen and (max-width: 650px){
 	#branding{
 		float: none;
+		text-align: center;
 		margin: 0 auto;
 	}
 	#site-logo{
