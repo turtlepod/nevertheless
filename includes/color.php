@@ -30,7 +30,7 @@ function nevertheless_color_customizer( $wp_customize ){
 			$wp_customize,
 			'color_link',
 			array(
-				'label'               => _x( 'Link Color', 'customizer', 'fyeah' ),
+				'label'               => _x( 'Link Color', 'customizer', 'nevertheless' ),
 				'section'             => 'colors',
 				'settings'            => 'color_link',
 				'priority'            => 10,
@@ -55,7 +55,7 @@ function nevertheless_color_customizer( $wp_customize ){
 			$wp_customize,
 			'color_header_bg',
 			array(
-				'label'               => _x( 'Header Background Color', 'customizer', 'fyeah' ),
+				'label'               => _x( 'Header Background Color', 'customizer', 'nevertheless' ),
 				'section'             => 'colors',
 				'settings'            => 'color_header_bg',
 				'priority'            => 10,
@@ -80,7 +80,7 @@ function nevertheless_color_customizer( $wp_customize ){
 			$wp_customize,
 			'color_site_title',
 			array(
-				'label'               => _x( 'Site Title Color', 'customizer', 'fyeah' ),
+				'label'               => _x( 'Site Title Color', 'customizer', 'nevertheless' ),
 				'section'             => 'colors',
 				'settings'            => 'color_site_title',
 				'priority'            => 10,
@@ -105,7 +105,7 @@ function nevertheless_color_customizer( $wp_customize ){
 			$wp_customize,
 			'color_site_description',
 			array(
-				'label'               => _x( 'Tagline Color', 'customizer', 'fyeah' ),
+				'label'               => _x( 'Tagline Color', 'customizer', 'nevertheless' ),
 				'section'             => 'colors',
 				'settings'            => 'color_site_description',
 				'priority'            => 10,
@@ -130,7 +130,7 @@ function nevertheless_color_customizer( $wp_customize ){
 			$wp_customize,
 			'color_nav_bg',
 			array(
-				'label'               => _x( 'Navigation Background Color', 'customizer', 'fyeah' ),
+				'label'               => _x( 'Navigation Background Color', 'customizer', 'nevertheless' ),
 				'section'             => 'colors',
 				'settings'            => 'color_nav_bg',
 				'priority'            => 10,
@@ -155,7 +155,7 @@ function nevertheless_color_customizer( $wp_customize ){
 			$wp_customize,
 			'color_nav',
 			array(
-				'label'               => _x( 'Navigation Text Color', 'customizer', 'fyeah' ),
+				'label'               => _x( 'Navigation Text Color', 'customizer', 'nevertheless' ),
 				'section'             => 'colors',
 				'settings'            => 'color_nav',
 				'priority'            => 10,

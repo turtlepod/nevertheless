@@ -20,7 +20,7 @@ $fonts_config = array(
 		'default' => 'Open Sans',
 	),
 	'font_widget_title' => array(
-		'label' => _x( 'Widget Title', 'customizer', 'nokonoko' ),
+		'label' => _x( 'Widget Title', 'customizer', 'nevertheless' ),
 		'target' => '.widget-title',
 		'fonts' => array( 'websafe', 'heading', 'base' ),
 		'default' => 'Open Sans',
@@ -44,7 +44,7 @@ $fonts_settings = array(
 	 * Note: availability of the subset depends on fonts selected.
 	 */
 	'font_subset' => _x( 'no-subset', 'Google Font Subset: add new subset( greek, cyrillic, vietnamese )', 'nevertheless' ),
-	'allowed_weight' => array( '300', '300italic', '400', '400italic', '700', '700italic' ),
+	'allowed_weight' => array( '300', '300italic', '400', '400italic', '700', '700italic', '800', '800italic' ),
 );
 
 /* Additional strings used in custom font feature. */
