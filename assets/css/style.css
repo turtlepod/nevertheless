@@ -87,7 +87,6 @@ html{-moz-box-sizing:border-box;-webkit-box-sizing:border-box;box-sizing:border-
 
 /* === ELEMENTS === */
 body{
-	background: url( '../images/bg-gradient.png' ) top left repeat-x;
 	background-color: #c9651c;
 	font-size:1.4em; /* use em for default, chrome fix */
 }
