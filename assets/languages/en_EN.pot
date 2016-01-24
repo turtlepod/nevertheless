@@ -1,10 +1,11 @@
 # Copyright (C) 2014 David Chandra Purnama
 # This file is distributed under the GNU General Public License v2.0 or later.
+#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: WordPress Theme\n"
 "Report-Msgid-Bugs-To: http://genbu.me/contact/\n"
-"POT-Creation-Date: 2015-09-05 12:42+0700\n"
+"POT-Creation-Date: 2016-01-24 16:30+0700\n"
 "PO-Revision-Date: 2015-09-05 12:42+0700\n"
 "Last-Translator: David Chandra Purnama <david@shellcreeper.com>\n"
 "Language-Team: \n"
@@ -12,19 +13,44 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 1.5.7\n"
+"X-Generator: Poedit 1.8.6\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
 "X-Poedit-Basepath: ../..\n"
 "X-Poedit-SourceCharset: UTF-8\n"
 "X-Poedit-KeywordsList: __;_e;esc_attr_e;esc_attr__;esc_html_e;esc_html__;"
-"__ngettext:1,2;_n:1,2;__ngettext_noop:1,2;_n_noop:1,2;_c;_nc:4c,1,2;_x:1,2c;"
-"_ex:1,2c;_nx:4c,1,2;_nx_noop:4c,1,2\n"
+"__ngettext:1,2;_n:1,2;__ngettext_noop:1,2;_n_noop:1,2;_c;_nc:4c,1,2;"
+"_x:1,2c;_ex:1,2c;_nx:4c,1,2;_nx_noop:4c,1,2\n"
 "X-Textdomain-Support: yes\n"
 "X-Poedit-SearchPath-0: .\n"
 
-#: includes/background.php:16
+#: includes/color.php:33
 msgctxt "customizer"
-msgid "Full Size Background"
+msgid "Link Color"
+msgstr ""
+
+#: includes/color.php:58
+msgctxt "customizer"
+msgid "Header Background Color"
+msgstr ""
+
+#: includes/color.php:83
+msgctxt "customizer"
+msgid "Site Title Color"
+msgstr ""
+
+#: includes/color.php:108
+msgctxt "customizer"
+msgid "Tagline Color"
+msgstr ""
+
+#: includes/color.php:133
+msgctxt "customizer"
+msgid "Navigation Background Color"
+msgstr ""
+
+#: includes/color.php:158
+msgctxt "customizer"
+msgid "Navigation Text Color"
 msgstr ""
 
 #: includes/custom-fonts.php:10
@@ -44,7 +70,7 @@ msgstr ""
 
 #: includes/custom-fonts.php:23
 msgctxt "customizer"
-msgid "Content Heading 2"
+msgid "Widget Title"
 msgstr ""
 
 #: includes/custom-fonts.php:29
@@ -52,14 +78,18 @@ msgctxt "customizer"
 msgid "Base Font"
 msgstr ""
 
-#: includes/custom-fonts.php:47
+#: includes/custom-fonts.php:46
 msgctxt "Google Font Subset: add new subset( greek, cyrillic, vietnamese )"
 msgid "no-subset"
 msgstr ""
 
-#: includes/custom-fonts.php:53
+#: includes/custom-fonts.php:52
 msgctxt "customizer"
 msgid "Fonts"
+msgstr ""
+
+#: includes/header-image.php:27
+msgid "Default"
 msgstr ""
 
 #: includes/layouts.php:9
@@ -77,47 +107,17 @@ msgctxt "layout name"
 msgid "Sidebar 1 | Content"
 msgstr ""
 
-#: includes/layouts.php:22
-msgctxt "layout name"
-msgid "Content | Sidebar 2"
-msgstr ""
-
-#: includes/layouts.php:26
-msgctxt "layout name"
-msgid "Sidebar 2 | Content"
-msgstr ""
-
-#: includes/layouts.php:31
-msgctxt "layout name"
-msgid "Sidebar 2 | Content | Sidebar 1"
-msgstr ""
-
-#: includes/layouts.php:35
-msgctxt "layout name"
-msgid "Sidebar 2 | Sidebar 1 | Content"
-msgstr ""
-
-#: includes/layouts.php:39
-msgctxt "layout name"
-msgid "Content | Sidebar 1 | Sidebar 2"
-msgstr ""
-
-#: includes/layouts.php:43
-msgctxt "layout name"
-msgid "Sidebar 1 | Content | Sidebar 2"
-msgstr ""
-
-#: includes/layouts.php:55
+#: includes/layouts.php:30
 msgctxt "layout"
 msgid "Default"
 msgstr ""
 
-#: includes/layouts.php:56
+#: includes/layouts.php:31
 msgctxt "layout"
 msgid "Layout"
 msgstr ""
 
-#: includes/layouts.php:57
+#: includes/layouts.php:32
 msgctxt "layout"
 msgid "Global Layout"
 msgstr ""
@@ -130,8 +130,8 @@ msgstr ""
 #: includes/logo.php:14
 msgctxt "customizer"
 msgid ""
-"This will replace site title with logo in header area. Recommended size is "
-"300px wide and 200px tall."
+"This will replace site title and tagline with logo in header area. "
+"Recommended maximum height for the logo size is 100px."
 msgstr ""
 
 #: includes/setup.php:16
@@ -139,14 +139,14 @@ msgctxt "sidebar name"
 msgid "Primary Sidebar"
 msgstr ""
 
-#: includes/setup.php:17
-msgctxt "sidebar name"
-msgid "Secondary Sidebar"
+#: includes/setup.php:24
+msgctxt "nav menu name"
+msgid "Navigation"
 msgstr ""
 
 #: includes/setup.php:25
 msgctxt "nav menu name"
-msgid "Navigation"
+msgid "Social Links"
 msgstr ""
 
 #: includes/setup.php:26

@@ -5,12 +5,13 @@ Tested up to: 4.3
 Version: 1.0.0
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
-Tags: black, blue, brown, gray, green, pink, purple, red, silver, tan, white, yellow, dark, light, responsive-layout, one-column, two-columns, three-columns, four-columns, left-sidebar, right-sidebar, custom-background, custom-colors, custom-header, custom-menu, editor-style, featured-images, full-width-template, post-formats, sticky-post, threaded-comments, translation-ready, holiday, photoblogging, seasonal
+Tags: red, yellow, dark, light, responsive-layout, one-column, two-columns, left-sidebar, right-sidebar, custom-background, custom-colors, custom-header, custom-menu, editor-style, featured-images, full-width-template, sticky-post, threaded-comments, translation-ready
 
 == Description ==
 
-Just another WordPress starter theme...
-This is just example description.
+Simple responsive classic theme with color options, 3 layout options, custom header, logo, custom CSS, social-links navigation menu, and more...
+
+**Features:**
 
 * Responsive Layout
 * Custom Background
@@ -18,9 +19,8 @@ This is just example description.
 * Custom Colors
 * Custom Fonts
 * Two Navigation Menus
-* Two Widget Areas (Sidebars)
 * Social Links
-* Post Formats
+* One Widget Area (Sidebar)
 * Something Cool
 * The GPL v2.0 or later license. :) Use it to make something cool.
 
@@ -28,6 +28,7 @@ Available layouts:
 
 * Content | Sidebar
 * Sidebar | Content
+* Content
 
 This theme is licensed under the GNU General Public License, version 2 (GPL) or later. All included images are also under GPL2+ licensing.
 
@@ -39,21 +40,17 @@ This theme is licensed under the GNU General Public License, version 2 (GPL) or 
 
 == Frequently Asked Questions ==
 
-= Example Question =
-
-Example answer
-
 = How to change layout? =
 
-You can change Global Layout in Customize Page. You can change individual post layout using Layouts meta box in post edit screen.
+You can change Global Layout in Customize Page. There's also "Full Width" Page Template.
 
 = How to upload logo? =
 
-You can upload logo in Customize Page in "Site Title & Tagline" Section or in WordPress 4.3 "Site Identity" Section.
+You can upload logo in Customize Page in "Site Identity" Section. Logo will replace your site title and tagline.
 
 == Changelog ==
 
-= 1.0.0 - DD.MM.YYYY =
+= 1.0.0 - 24.01.2016 =
 
 * Initial Release.
 
