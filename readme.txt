@@ -2,7 +2,7 @@
 Contributors: turtlepod
 Requires at least: 4.1
 Tested up to: 4.3
-Version: 1.0.0
+Version: 1.1.0
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Tags: red, yellow, dark, light, responsive-layout, one-column, two-columns, left-sidebar, right-sidebar, custom-background, custom-colors, custom-header, custom-menu, editor-style, featured-images, full-width-template, sticky-post, threaded-comments, translation-ready
@@ -49,6 +49,11 @@ You can change Global Layout in Customize Page. There's also "Full Width" Page T
 You can upload logo in Customize Page in "Site Identity" Section. Logo will replace your site title and tagline.
 
 == Changelog ==
+
+= 1.0.0 - 26.01.2016 =
+
+* Update Tamatebako Library
+* Add link color option dynamically to Editor Style.
 
 = 1.0.0 - 24.01.2016 =
 
