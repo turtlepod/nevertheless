@@ -256,3 +256,40 @@ function nevertheless_color_print_css(){
 	}
 }
 
+/* === EDITOR STYLE === */
+
+/* Add Editor Style */
+add_filter( 'mce_css', 'nevertheless_color_mce_css' );
+
+/**
+ * Add Link Color Option in Editor Style (MCE CSS)
+ * @since 1.1.0
+ */
+function nevertheless_color_mce_css( $mce_css ){
+	$mce_css .= ', ' . add_query_arg( array( 'action' => 'nevertheless_color_mce_css', '_nonce' => wp_create_nonce( 'nevertheless-color-mce-nonce', __FILE__ ) ), admin_url( 'admin-ajax.php' ) );
+	return $mce_css;
+}
+
+/* Ajax: editor style CSS */
+add_action( 'wp_ajax_nevertheless_color_mce_css', 'nevertheless_color_mce_css_ajax_callback' );
+add_action( 'wp_ajax_no_priv_nevertheless_color_mce_css', 'nevertheless_color_mce_css_ajax_callback' );
+
+/**
+ * Ajax Callback
+ */
+function nevertheless_color_mce_css_ajax_callback(){
+
+	/* Check nonce */
+	$nonce = isset( $_REQUEST['_nonce'] ) ? $_REQUEST['_nonce'] : '';
+	if( ! wp_verify_nonce( $nonce, 'nevertheless-color-mce-nonce' ) ){
+		die();
+	}
+
+	/* Get Link Color */
+	$color_link = tamatebako_sanitize_hex_color_no_hash( get_theme_mod( 'color_link', 'ea7521' ) );
+
+	/* Set File Type */
+	header( 'Content-type: text/css' );
+	echo "a,a:hover,a:focus{color:#{$color_link}}";
+	die();
+}
