@@ -13,7 +13,7 @@ if ( ! isset( $content_width ) ){
 /* === Register Sidebars === */
 
 $sidebars_args = array(
-	"primary"   => array( "name" => _x( 'Primary Sidebar', 'sidebar name', 'nevertheless' ), "description" => "" ),
+	"primary"   => array( "name" => _x( 'Sidebar', 'sidebar name', 'nevertheless' ), "description" => "" ),
 );
 add_theme_support( 'tamatebako-sidebars', $sidebars_args );
 

@@ -6,16 +6,16 @@ $image_dir = get_template_directory_uri() . '/assets/images/layouts/';
 $layouts = array(
 	/* One Column */
 	'content' => array(
-		'name'          => _x( 'Content', 'layout name', 'nevertheless' ),
+		'name'          => _x( 'Full Width', 'layout name', 'nevertheless' ),
 		'thumbnail'     => $image_dir . 'content.png',
 	),
 	/* Two Columns */
 	'content-sidebar1'  => array(
-		'name'          => _x( 'Content | Sidebar 1', 'layout name', 'nevertheless' ),
+		'name'          => _x( 'Right Sidebar', 'layout name', 'nevertheless' ),
 		'thumbnail'     => $image_dir . 'content-sidebar1.png',
 	),
 	'sidebar1-content'  => array(
-		'name'          => _x( 'Sidebar 1 | Content', 'layout name', 'nevertheless' ),
+		'name'          => _x( 'Left Sidebar', 'layout name', 'nevertheless' ),
 		'thumbnail'     => $image_dir . 'sidebar1-content.png',
 	),
 );
