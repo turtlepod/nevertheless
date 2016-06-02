@@ -4,8 +4,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: WordPress Theme\n"
 "Report-Msgid-Bugs-To: http://genbu.me/contact/\n"
-"POT-Creation-Date: 2016-03-15 09:41+0700\n"
-"PO-Revision-Date: 2016-03-15 09:43+0700\n"
+"POT-Creation-Date: 2016-06-03 00:19+0700\n"
+"PO-Revision-Date: 2016-06-03 00:19+0700\n"
 "Last-Translator: David Chandra Purnama <david@shellcreeper.com>\n"
 "Language-Team: \n"
 "Language: id_ID\n"
@@ -17,39 +17,39 @@ msgstr ""
 "X-Poedit-Basepath: ../..\n"
 "X-Poedit-SourceCharset: UTF-8\n"
 "X-Poedit-KeywordsList: __;_e;esc_attr_e;esc_attr__;esc_html_e;esc_html__;"
-"__ngettext:1,2;_n:1,2;__ngettext_noop:1,2;_n_noop:1,2;_c;_nc:4c,1,2;"
-"_x:1,2c;_ex:1,2c;_nx:4c,1,2;_nx_noop:4c,1,2\n"
+"__ngettext:1,2;_n:1,2;__ngettext_noop:1,2;_n_noop:1,2;_c;_nc:4c,1,2;_x:1,2c;"
+"_ex:1,2c;_nx:4c,1,2;_nx_noop:4c,1,2\n"
 "X-Textdomain-Support: yes\n"
 "X-Poedit-SearchPath-0: .\n"
 
-#: includes/color.php:33
+#: includes/custom-colors.php:33
 msgctxt "customizer"
 msgid "Link Color"
 msgstr "Warna Tautan"
 
-#: includes/color.php:58
+#: includes/custom-colors.php:58
 msgctxt "customizer"
 msgid "Header Background Color"
 msgstr "Warna Latar Belakang"
 
-#: includes/color.php:83
+#: includes/custom-colors.php:83
 msgctxt "customizer"
 msgid "Site Title Color"
 msgstr ""
 "Warna Judul S\n"
 "itus"
 
-#: includes/color.php:108
+#: includes/custom-colors.php:108
 msgctxt "customizer"
 msgid "Tagline Color"
 msgstr "Warna Tagline"
 
-#: includes/color.php:133
+#: includes/custom-colors.php:133
 msgctxt "customizer"
 msgid "Navigation Background Color"
 msgstr "Warna Latar Belakang Navigasi"
 
-#: includes/color.php:158
+#: includes/custom-colors.php:158
 msgctxt "customizer"
 msgid "Navigation Text Color"
 msgstr "Warna Tulisan Navigasi"
@@ -123,20 +123,6 @@ msgstr "Layout"
 msgctxt "layout"
 msgid "Global Layout"
 msgstr "Layout Global"
-
-#: includes/logo.php:13
-msgctxt "customizer"
-msgid "Logo"
-msgstr "Logo"
-
-#: includes/logo.php:14
-msgctxt "customizer"
-msgid ""
-"This will replace site title and tagline with logo in header area. "
-"Recommended maximum height for the logo size is 100px."
-msgstr ""
-"Ini akan mengganti judul situs dan tagline dengan di header logo daerah. "
-"Ketinggian maksimum yang direkomendasikan untuk ukuran logo adalah 100px."
 
 #: includes/setup.php:16
 msgctxt "sidebar name"
@@ -253,10 +239,22 @@ msgctxt "comment"
 msgid "Your comment is awaiting moderation."
 msgstr "Komentar Anda sedang menunggu moderasi."
 
-#: includes/utility.php:11 includes/utility.php:12
+#: includes/utility.php:8 includes/utility.php:9
 msgctxt "customizer"
 msgid "Custom CSS"
 msgstr "CSS Kustom"
+
+#~ msgctxt "customizer"
+#~ msgid "Logo"
+#~ msgstr "Logo"
+
+#~ msgctxt "customizer"
+#~ msgid ""
+#~ "This will replace site title and tagline with logo in header area. "
+#~ "Recommended maximum height for the logo size is 100px."
+#~ msgstr ""
+#~ "Ini akan mengganti judul situs dan tagline dengan di header logo daerah. "
+#~ "Ketinggian maksimum yang direkomendasikan untuk ukuran logo adalah 100px."
 
 #~ msgctxt "layout name"
 #~ msgid "Content"
