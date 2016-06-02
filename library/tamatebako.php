@@ -6,8 +6,8 @@
  *  From the sea comes the sad, sweet voice of the princess:
  *  "I told you not to open that box. In it was your old age ..."
  * 
- * @version   3.1.8
- * @author    David Chandra <david@genbu.me>
+ * @version   3.3.0
+ * @author    David Chandra <david@genbumedia.com>
  * @copyright Copyright (c) 2016, Genbu Media
  * @license   http://www.gnu.org/licenses/old-licenses/gpl-2.0.html
 **/
@@ -86,9 +86,6 @@ function tamatebako_load_theme_support(){
 	/* === REGISTER SIDEBARS === */
 	tamatebako_require_if_theme_supports( 'tamatebako-sidebars', 'modules/sidebars' );
 
-	/* === CUSTOMIZER MOBILE VIEW === */
-	tamatebako_require_if_theme_supports( 'tamatebako-customize-mobile-view', 'modules/mobile-view' );
-
 	/* === POST FORMATS SETUP === */
 	if( !is_admin() ) tamatebako_require_if_theme_supports( 'post-formats', 'modules/post-formats' );
 
@@ -100,9 +97,6 @@ function tamatebako_load_theme_support(){
 	/* === MICRODATA FILTERS === */
 	if( !is_admin() ) tamatebako_require_if_theme_supports( 'tamatebako-microdata', 'modules/microdata' );
 
-	/* === LOGO === */
-	tamatebako_require_if_theme_supports( 'tamatebako-logo', 'modules/logo' );
-
 	/* === LAYOUTS === */
 	tamatebako_require_if_theme_supports( 'tamatebako-layouts', 'modules/layouts/layouts' );
 
@@ -112,4 +106,11 @@ function tamatebako_load_theme_support(){
 	/* === CUSTOM FONTS === */
 	tamatebako_require_if_theme_supports( 'tamatebako-custom-fonts', 'modules/custom-fonts/custom-fonts' );
 
+	/* === HIDE PAGE TITLE === */
+	tamatebako_require_if_theme_supports( 'tamatebako-hide-page-title', 'modules/hide-page-title' );
+
+	/* === UPSELL === */
+	if( !is_multisite() ){
+		tamatebako_require_if_theme_supports( 'tamatebako-upsell', 'modules/upsell' );
+	}
 }

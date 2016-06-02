@@ -98,7 +98,7 @@ function tamatebako_archive_header(){
 	<header class="archive-header">
 		<?php the_archive_title( '<h1 class="archive-title">', '</h1>'); ?>
 		<?php the_archive_description( '<div class="archive-description">', '</div>' ); ?>
-	</header><!-- .loop-meta -->
+	</header><!-- .archive-header -->
 <?php
 	}
 }
@@ -131,10 +131,13 @@ function tamatebako_do_content( $content ){
 		$content = wptexturize( $content );
 		$content = convert_smilies( $content );
 		$content = convert_chars( $content );
-		$content = wpautop( $content );
 		$content = wptexturize( $content );
 		$content = do_shortcode( $content );
 		$content = shortcode_unautop( $content );
+		if( function_exists('wp_make_content_images_responsive') ) { /* WP 4.4+ */
+			$content = wp_make_content_images_responsive( $content );
+		}
+		$content = wpautop( $content );
 	}
 	return $content;
 }

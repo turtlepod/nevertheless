@@ -205,7 +205,7 @@ button:focus,
 		padding: 15px;
 		padding: 1.5rem;
 	}
-	.logo-uploaded #branding{
+	.wp-custom-logo #branding{
 		padding: 0;
 	}
 
@@ -233,24 +233,16 @@ button:focus,
 			margin: 0;
 		}
 	/* Logo */
-	.logo-active{
-		
-	}
-	.logo-uploaded{
-		
-	}
-	#site-logo{
+	.custom-logo-link{
 		margin: 0;
-	}
-	#site-logo > a{
 		max-width: 100%;
 		display: block;
 	}
-	#site-logo a:hover,
-	#site-logo a:focus{
+	.custom-logo-link:hover,
+	.custom-logo-link:focus{
 		opacity: 0.8;
 	}
-	img.logo-img{
+	img.custom-logo{
 		display: block;
 	}
 
@@ -1544,10 +1536,8 @@ button:focus,
 		text-align: center;
 		margin: 0 auto;
 	}
-	#site-logo{
+	.custom-logo-link{
 		text-align: center;
-	}
-	#site-logo > a{
 		display: inline-block;
 	}
 	#social-links{

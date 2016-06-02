@@ -23,6 +23,12 @@ For more info please visit theme page: [Nevertheless WordPress Theme](http://gen
 
 == Changelog ==
 
+= 1.3.0 - 02.JUN.2016
+
+* Update tamatebako to v.3.3.0
+* Use WP 4.5 Custom logo. change "includes/logo.php" to "includes/custom-logo.php"
+* change "includes/color.php" to "includes/custom-colors.php" 
+
 = 1.2.0 - 15.MAR.2016 =
 
 * Comment moderation message fix (tamatebako update)

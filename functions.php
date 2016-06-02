@@ -45,10 +45,10 @@ function nevertheless_theme_setup(){
 	tamatebako_include( 'includes/header-image' );
 
 	/* === COLOR === */
-	tamatebako_include( 'includes/color' );
+	tamatebako_include( 'includes/custom-colors' );
 
 	/* === LOGO === */
-	tamatebako_include( 'includes/logo' );
+	tamatebako_include( 'includes/custom-logo' );
 
 	/* === UTILITY: Mobile View, Custom CSS === */
 	tamatebako_include( 'includes/utility' );
