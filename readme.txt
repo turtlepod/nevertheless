@@ -23,6 +23,11 @@ For more info please visit theme page: [Nevertheless WordPress Theme](http://gen
 
 == Changelog ==
 
+= 1.3.1 - 03.JUN.2016
+
+* Hide post format taxonomy,
+* Fix CSS for tag archive (archive title icon)
+
 = 1.3.0 - 02.JUN.2016
 
 * Update tamatebako to v.3.3.0

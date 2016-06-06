@@ -432,6 +432,9 @@ button:focus,
 	.archive.category .archive-title:before{
 		content: '\f301';
 	}
+	.archive.tag .archive-title:before{
+		content: '\f302';
+	}
 	.archive.author .archive-title:before{
 		content: '\f304';
 	}
@@ -660,6 +663,9 @@ button:focus,
 			}
 			.entry-taxonomy.post_tag:before{
 				content: '\f302';
+			}
+			.entry-taxonomy.post_format{
+				display:none;
 			}
 				.entry-taxonomy.category .entry-taxonomy-text,
 				.entry-taxonomy.post_tag .entry-taxonomy-text{
