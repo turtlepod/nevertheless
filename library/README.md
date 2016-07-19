@@ -8,6 +8,11 @@ This framework is licensed under the [GNU General Public License](http://www.gnu
 
 ###Changelog
 
+**3.3.1 - 19.July.2016**
+
+* use wp_strip_all_tags() to sanitize CSS in custom css & custom fonts module.
+* remove tamatebako_parse_css() in custom css module.
+
 **3.3.0 - 18.May.2016**
 
 * Remove Logo Module. Use WP Custom Logo

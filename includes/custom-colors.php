@@ -241,7 +241,7 @@ function nevertheless_color_print_css(){
 
 	/* Print it. */
 	if ( !empty( $css ) ){
-		echo "\n" . '<style type="text/css" id="nevertheless-color-css">' . trim( $css ) . '</style>' . "\n";
+		echo "\n" . '<style type="text/css" id="nevertheless-color-css">' . trim( wp_strip_all_tags( $css ) ) . '</style>' . "\n";
 	}
 
 	/* Customizer Only (special placeholder for link color). */
@@ -290,6 +290,6 @@ function nevertheless_color_mce_css_ajax_callback(){
 
 	/* Set File Type */
 	header( 'Content-type: text/css' );
-	echo "a,a:hover,a:focus{color:#{$color_link}}";
+	echo wp_strip_all_tags( "a,a:hover,a:focus{color:#{$color_link}}" );
 	die();
 }

@@ -53,4 +53,3 @@ $fonts_strings = array(
 );
 
 add_theme_support( 'tamatebako-custom-fonts', $fonts_config, $fonts_settings, $fonts_strings );
-
