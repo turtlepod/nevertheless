@@ -57,7 +57,7 @@ function tamatebako_custom_css_customize_register( $wp_customize ){
 			'type'                => 'theme_mod',
 			'transport'           => 'postMessage',
 			'capability'          => 'edit_theme_options',
-			'sanitize_callback'   => 'tamatebako_custom_css_sanitize',
+			'sanitize_callback'   => 'tamatebako_parse_css',
 		)
 	);
 
@@ -104,11 +104,18 @@ function tamatebako_custom_css_wp_head() {
 
 
 /**
- * Sanitize Custom CSS
- * @link https://developer.wordpress.org/reference/functions/wp_strip_all_tags/
- * @since 3.3.1
+ * Tamatebako Restore CSS
+ * restore several character from esc_html().
+ * @access Private
  */
-function tamatebako_custom_css_sanitize( $in ){
-	$in = wp_strip_all_tags( esc_textarea( $in ) );
-	return $in;
+function tamatebako_parse_css( $css ){
+	$css = preg_replace( '@<(script|style)[^>]*?>.*?</\\1>@si', '', $css );
+	$css = wp_kses( $css, array() );
+	$css = esc_html( $css );
+	$css = str_replace( '&gt;', '>', $css );
+	$css = str_replace( '&quot;', '"', $css );
+	$css = str_replace( '&amp;', "&", $css );
+	$css = str_replace( '&amp;#039;', "'", $css );
+	$css = str_replace( '&#039;', "'", $css );
+	return $css;
 }

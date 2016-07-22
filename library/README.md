@@ -12,6 +12,7 @@ This framework is licensed under the [GNU General Public License](http://www.gnu
 
 * use wp_strip_all_tags() to sanitize CSS in custom css & custom fonts module.
 * remove tamatebako_parse_css() in custom css module.
+* remove activation redirect in upsell module. It's not allowed in wp.org
 
 **3.3.0 - 18.May.2016**
 

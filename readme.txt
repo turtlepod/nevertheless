@@ -51,6 +51,10 @@ Source: https://unsplash.com/photos/l98YXp1X8dA
 
 == Changelog ==
 
+= 1.3.3 - 20.JUL.2016
+
+* Fix sanitize function for CSS (tamatebako).
+
 = 1.3.2 - 19.JUL.2016
 
 * Update Tamatebako.
