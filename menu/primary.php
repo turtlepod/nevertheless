@@ -20,7 +20,7 @@
 			
 		}
 		else{
-			tamatebako_menu_fallback_cb();
+			tamatebako_menu_fallback_cb( array( 'menu_id' => 'menu-primary-items' ) );
 		}
 		?>
 

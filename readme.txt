@@ -51,6 +51,10 @@ Source: https://unsplash.com/photos/l98YXp1X8dA
 
 == Changelog ==
 
+= 1.3.4 - 27.JUL.2016
+
+* Fix: Can't change menu color from customizer https://github.com/turtlepod/nevertheless/issues/4
+
 = 1.3.3 - 20.JUL.2016
 
 * Fix sanitize function for CSS (tamatebako).

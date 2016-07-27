@@ -8,6 +8,10 @@ This framework is licensed under the [GNU General Public License](http://www.gnu
 
 ###Changelog
 
+**3.3.2 - 27.July.2016**
+
+* Improvement in menu falback cb. 
+
 **3.3.1 - 19.July.2016**
 
 * use wp_strip_all_tags() to sanitize CSS in custom css & custom fonts module.
