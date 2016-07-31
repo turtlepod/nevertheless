@@ -334,7 +334,7 @@ button:focus,
 
 /* Primary Menu */
 #menu-primary{
-	
+	margin-top: -1px;
 }
 	#menu-primary .menu-container{
 		border: none;
