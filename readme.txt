@@ -54,6 +54,7 @@ Source: https://unsplash.com/photos/l98YXp1X8dA
 = 1.3.4 - 27.JUL.2016
 
 * Fix: Can't change menu color from customizer https://github.com/turtlepod/nevertheless/issues/4
+* Fix: IE Bug in Nav Menu https://github.com/turtlepod/nevertheless/issues/5
 
 = 1.3.3 - 20.JUL.2016
 
