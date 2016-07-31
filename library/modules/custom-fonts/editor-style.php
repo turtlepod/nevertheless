@@ -2,7 +2,7 @@
 /**
  * Custom Fonts: Editor Style Functions.
  * Ajax CSS in editor style is taken from "Stargazer" theme by Justin Tadlock.
- * @author David Chandra <david@genbu.me>
+ * @author David Chandra <david@genbumedia.com>
  * @author Justin Tadlock <justintadlock@gmail.com>
 **/
 
@@ -118,7 +118,7 @@ function tamatebako_fonts_mce_css_ajax_callback(){
 	}
 
 	header( 'Content-type: text/css' );
-	echo $css;
+	echo wp_strip_all_tags( $css );
 	die();
 }
 

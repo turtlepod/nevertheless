@@ -9,7 +9,7 @@ if ( tamatebako_is_menu_registered( 'social-links' ) ){
 		'container'       => false,
 		'echo'            => false,
 		'items_wrap'      => '<ul class="social-links">%3$s</ul>',
-		'depth'           => 0,
+		'depth'           => 1,
 		'link_before'     => '<span class="screen-reader-text">',
 		'link_after'      => '</span>',
 		'fallback_cb'     => '__return_false',

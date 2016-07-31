@@ -4,9 +4,36 @@ WordPress theme engine for faster theme development.
 
 **Copyright & license**<br />
 This framework is licensed under the [GNU General Public License](http://www.gnu.org/licenses/old-licenses/gpl-2.0.html), version 2 (GPL) or later.<br />
-2016 © [Genbu Media](http://genbu.me/). All rights reserved.
+2016 © [Genbu Media](http://genbumedia.com/). All rights reserved.
 
 ###Changelog
+
+**3.3.2 - 27.July.2016**
+
+* Improvement in menu falback cb. 
+
+**3.3.1 - 19.July.2016**
+
+* use wp_strip_all_tags() to sanitize CSS in custom css & custom fonts module.
+* use tamatebako_parse_css() as sanitize cb custom css module. this because wp_strip_all_tags() remove line breaks in textarea.
+* remove activation redirect in upsell module. It's not allowed in wp.org
+
+**3.3.0 - 18.May.2016**
+
+* Remove Logo Module. Use WP Custom Logo
+* Remove Customizer Mobile View Module. WP already have it.
+* Remove Get the Image (NokoNoko).
+* Use import for base CSS (NokoNoko).
+* No longer use genericons. create own "esicons".
+* Selective widget refresh (customizer) support.
+* Add f(x) Updater.
+* Add Customizer Control: Radio Image and use it for layout.
+
+**3.2.0 - 20.Mar.2016**
+
+* Upsell Module (for PRO version).
+* Responsive image in content.
+* Hide Page Title Module
 
 **3.1.9 - 05.Mar.2016**
 
