@@ -196,6 +196,7 @@ button:focus,
 	background-color: #EA7521;
 	background-repeat: no-repeat;
 	background-position: left top;
+	background-size: cover;
 }
 #header:after{
 	content:".";display:block;height:0;clear:both;visibility:hidden;

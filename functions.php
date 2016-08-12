@@ -39,10 +39,10 @@ function nevertheless_theme_setup(){
 	tamatebako_include( 'includes/layouts' );
 
 	/* === BACKGROUND === */
-	tamatebako_include( 'includes/background' );
+	tamatebako_include( 'includes/custom-background' );
 
 	/* === HEADER IMAGE === */
-	tamatebako_include( 'includes/header-image' );
+	tamatebako_include( 'includes/custom-header' );
 
 	/* === COLOR === */
 	tamatebako_include( 'includes/custom-colors' );
