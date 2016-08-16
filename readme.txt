@@ -51,7 +51,7 @@ Source: https://unsplash.com/photos/l98YXp1X8dA
 
 == Changelog ==
 
-= 1.3.5 - 12.AUG.2016
+= 1.3.5 - 16.AUG.2016
 
 * Change "header-image.php" to "custom-header.php"
 * Change "background.php" to "custom-background.php"
