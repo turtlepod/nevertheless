@@ -1,8 +1,8 @@
 === Nevertheless ===
 Contributors: turtlepod
 Requires at least: 4.4
-Tested up to: 4.5
-Version: 1.2.0
+Tested up to: 4.6
+Version: 1.3.5
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Tags: red, yellow, dark, light, responsive-layout, one-column, two-columns, left-sidebar, right-sidebar, custom-background, custom-colors, custom-header, custom-menu, editor-style, featured-images, full-width-template, sticky-post, threaded-comments, translation-ready
@@ -50,6 +50,15 @@ Source: https://unsplash.com/photos/l98YXp1X8dA
 
 
 == Changelog ==
+
+= 1.3.5 - 16.AUG.2016
+
+* Change "header-image.php" to "custom-header.php"
+* Change "background.php" to "custom-background.php"
+* Fix: https://github.com/turtlepod/nevertheless/issues/8
+* Change sugested header height to 130px (previously 240px)
+* Use flex header height/width
+* Use "background-size: cover" for header image
 
 = 1.3.4 - 27.JUL.2016
 

@@ -3,21 +3,6 @@
  * Custom Header Image
 **/
 
-/* === Custom Header Image === */
-$custom_header_args = array(
-	'default-image'          => '%s/assets/images/header.png',
-	'random-default'         => false,
-	'width'                  => 940,
-	'height'                 => 240,
-	'flex-height'            => false,
-	'flex-width'             => false,
-	'default-text-color'     => false,
-	'header-text'            => false, /* no option */
-	'uploads'                => true,
-	'wp-head-callback'       => '__return_false',
-);
-add_theme_support( 'custom-header', $custom_header_args );
-
 /* Registers default headers for the theme. */
 register_default_headers(
 	array(
@@ -28,3 +13,18 @@ register_default_headers(
 		),
 	)
 );
+
+/* === Custom Header Image === */
+$custom_header_args = array(
+	'default-image'          => '%s/assets/images/header.png',
+	'random-default'         => false,
+	'width'                  => 940,
+	'height'                 => 130,
+	'flex-height'            => true,
+	'flex-width'             => true,
+	'default-text-color'     => false,
+	'header-text'            => false, /* no option */
+	'uploads'                => true,
+	'wp-head-callback'       => '__return_false',
+);
+add_theme_support( 'custom-header', $custom_header_args );
