@@ -1,11 +1,11 @@
 === Nevertheless ===
 Contributors: turtlepod
 Requires at least: 4.4
-Tested up to: 4.6
+Tested up to: 4.7
 Version: 1.3.5
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
-Tags: red, yellow, dark, light, responsive-layout, one-column, two-columns, left-sidebar, right-sidebar, custom-background, custom-colors, custom-header, custom-menu, editor-style, featured-images, full-width-template, sticky-post, threaded-comments, translation-ready
+Tags: one-column, two-columns, left-sidebar, right-sidebar, theme-options, custom-colors, custom-background, custom-header, custom-menu, editor-style, featured-images, full-width-template, sticky-post, threaded-comments, translation-ready, blog
 
 == Description ==
 
@@ -50,6 +50,10 @@ Source: https://unsplash.com/photos/l98YXp1X8dA
 
 
 == Changelog ==
+
+= 1.4.0 - 10.DEC.2016
+
+* WP 4.7 Compat
 
 = 1.3.5 - 16.AUG.2016
 
