@@ -390,6 +390,13 @@ button:focus,
 		color: #fff;
 	}
 
+/* WooCommerce Messed Up Button Style */
+.woocommerce #menu-primary .search-submit {
+	padding: 0;
+}
+.woocommerce #menu-primary .search-submit:hover {
+	background: transparent;
+}
 
 /* === MAIN === */
 #container > .wrap{
@@ -960,7 +967,7 @@ button:focus,
 		margin-left: 10px;
 		margin-left: 1rem;
 	}
-		#reply-title{
+		body:not(.single-product) #reply-title{
 			font-size: 1.2em;
 			font-weight: 600;
 			margin-top: -10px;

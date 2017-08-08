@@ -53,6 +53,9 @@ function nevertheless_theme_setup(){
 	/* === UTILITY: Mobile View, Custom CSS === */
 	tamatebako_include( 'includes/utility' );
 
+	/* === PLUGINS SUPPORT === */
+	tamatebako_include( 'includes/plugins' );
+
 }
 
 do_action( 'tamatebako_after_setup' );
