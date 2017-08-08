@@ -1,8 +1,8 @@
 === Nevertheless ===
 Contributors: turtlepod
-Requires at least: 4.4
-Tested up to: 4.7
-Version: 1.3.5
+Requires at least: 4.5
+Tested up to: 4.8
+Version: 1.5.0
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Tags: one-column, two-columns, left-sidebar, right-sidebar, theme-options, custom-colors, custom-background, custom-header, custom-menu, editor-style, featured-images, full-width-template, sticky-post, threaded-comments, translation-ready, blog
@@ -50,6 +50,10 @@ Source: https://unsplash.com/photos/l98YXp1X8dA
 
 
 == Changelog ==
+
+= 1.4.0 - 08.AGS.2017
+
+* Basic WooCommerce Support.
 
 = 1.4.0 - 10.DEC.2016
 
