@@ -1128,6 +1128,9 @@ button:focus,
 
 
 /* === SIDEBAR === */
+.sidebar {
+	border-top: 1px solid #ccc;
+}
 #sidebar-primary{
 }
 
