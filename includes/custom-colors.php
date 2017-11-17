@@ -290,6 +290,9 @@ function nevertheless_color_mce_css_ajax_callback(){
 
 	/* Set File Type */
 	header( 'Content-type: text/css' );
-	echo wp_strip_all_tags( "a,a:hover,a:focus{color:#{$color_link}}" );
+	$css  = '';
+	$css .= "a,a:hover,a:focus{color:#{$color_link}}";
+	$css .= 'input[type="submit"]:hover,input[type="submit"]:focus,input[type="button"]:hover,input[type="button"]:focus,input[type="reset"]:hover,input[type="reset"]:focus,button:hover,button:focus,.button:hover,.button:focus{ border-color: #' . $color_link . '; background: #' . $color_link . '; color: #fff; }';
+	echo wp_strip_all_tags( $css );
 	die();
 }

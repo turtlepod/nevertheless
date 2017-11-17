@@ -58,3 +58,24 @@ pre{
 code{
 	background: #eee;
 }
+
+/* Buttons */
+input[type="submit"],
+input[type="button"],
+input[type="reset"],
+button,
+.button{
+	border: 1px solid #444;
+	background: #444;
+	color: #fff;
+}
+#tinymce a[data-mce-selected].button {
+	padding: 4px 10px;
+	padding: 0.4rem 1rem;
+	border-radius: 0;
+	background: #444;
+	color: #fff;
+	box-shadow: none;
+	border: 1px solid #444;
+	margin: 0;
+}
