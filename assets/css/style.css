@@ -171,6 +171,8 @@ button:focus,
 .button:focus{
 	border: 1px solid #ea7521;
 	background: #ea7521;
+	color: #fff;
+	text-decoration: none;
 }
 
 /* === IMAGES & MEDIA === */
