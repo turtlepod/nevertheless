@@ -1,8 +1,8 @@
 === Nevertheless ===
 Contributors: turtlepod
 Requires at least: 4.5
-Tested up to: 4.8
-Version: 1.5.1
+Tested up to: 4.9
+Version: 1.5.2
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Tags: one-column, two-columns, left-sidebar, right-sidebar, theme-options, custom-colors, custom-background, custom-header, custom-menu, editor-style, featured-images, full-width-template, sticky-post, threaded-comments, translation-ready, blog
@@ -51,7 +51,11 @@ Source: https://unsplash.com/photos/l98YXp1X8dA
 
 == Changelog ==
 
-= 1.5.0 - 13.AGS.2017
+= 1.5.2 - 17.NOV.2017
+
+* Button style fix.
+
+= 1.5.1 - 13.AGS.2017
 
 * Widget with no title CSS Fix.
 
